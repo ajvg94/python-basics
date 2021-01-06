@@ -54,11 +54,21 @@ String %
 Python has a printf()-like facility to put together a string. The % operator takes a printf-type format 
 string on the left (%d int, %s string, %f/%g floating point), and the matching values in a tuple on the 
 right (a tuple is made of values separated by commas, typically grouped inside parentheses):
-
 """
 # % operator
-text = "%d little pigs come out, or I'll %s, and I'll %s, and I'll blow your %s down." % (3, 'huff', 'puff', 'house')
+text = ("%d little pigs come out, "
+    "or I'll %s, and I'll %s, "
+    "and I'll blow your %s down."
+    % (3, 'huff', 'puff', 'house'))
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
+"""
+i18n Strings (Unicode)
+
+Regular Python strings are *not* unicode, they are just plain bytes. To create a unicode string, 
+use the 'u' prefix on the string literal:
+"""
+ustring = u'A unicode \u018e string \xf1'
+print(ustring)
 
 
 
