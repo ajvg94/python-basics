@@ -19,8 +19,8 @@ It was the worst of times."""
 # It was the worst of times.
 print (multi)
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
+# String methods
 """
-String methods
     s.lower(), s.upper() -- returns the lowercase or uppercase version of the string
     s.strip() -- returns a string with whitespace removed from the start and end
     s.isalpha()/s.isdigit()/s.isspace()... -- tests if all the string chars are in the various character classes
@@ -31,8 +31,8 @@ String methods
     s.join(list) -- opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
 """
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
+# String slices
 """
-String slices
     H   e   l   l   o
     0   1   2   3   4
    -1  -2  -3  -4  -5
@@ -48,22 +48,19 @@ String slices
     s[-3:] is 'llo' -- starting with the 3rd char from the end and extending to the end of the string. 
 """
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
+# String %
 """
-String %
-
 Python has a printf()-like facility to put together a string. The % operator takes a printf-type format 
 string on the left (%d int, %s string, %f/%g floating point), and the matching values in a tuple on the 
 right (a tuple is made of values separated by commas, typically grouped inside parentheses):
 """
-# % operator
 text = ("%d little pigs come out, "
     "or I'll %s, and I'll %s, "
     "and I'll blow your %s down."
     % (3, 'huff', 'puff', 'house'))
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
+# i18n Strings (Unicode)
 """
-i18n Strings (Unicode)
-
 Regular Python strings are *not* unicode, they are just plain bytes. To create a unicode string, 
 use the 'u' prefix on the string literal:
 """
