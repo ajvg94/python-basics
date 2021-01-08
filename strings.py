@@ -20,6 +20,15 @@ It was the worst of times."""
 # It was the best of times.
 # It was the worst of times.
 print (multi)
+
+"""
+Two or more string literals (i.e. the ones enclosed between quotes) next to each other 
+are automatically concatenated.
+"""
+print ('Py' 'thon')
+# 'Python'
+
+
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
 # String methods
 """
