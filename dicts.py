@@ -32,17 +32,17 @@ print ('jack' not in tel)# False
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
 ## By default, iterating over a dict iterates over its keys.
 ## Note that the keys are in a random order.
-for key in dict: print key
+for key in dict: print (key)
 ## prints a g o
 
 ## Exactly the same as above
-for key in dict.keys(): print key
+for key in dict.keys(): print (key)
 
 ## Get the .keys() list:
-print dict.keys()  ## ['a', 'o', 'g']
+print (dict.keys())  ## ['a', 'o', 'g']
 
 ## Likewise, there's a .values() list of values
-print dict.values()  ## ['alpha', 'omega', 'gamma']
+print (dict.values())  ## ['alpha', 'omega', 'gamma']
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
 # Del
 """
@@ -54,32 +54,11 @@ del var  # var no more!
 list = ['a', 'b', 'c', 'd']
 del list[0]     ## Delete first element
 del list[-2:]   ## Delete last two elements
-print list      ## ['b']
+print (list)      ## ['b']
 
 dict = {'a':1, 'b':2, 'c':3}
 del dict['b']   ## Delete 'b' entry
-print dict      ## {'a':1, 'c':3}
-##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
-# Files 
-"""
- The special mode 'rU' is the "Universal" option for text files where it's smart about 
- converting different line-endings so they always come through as a simple '\n'.
-"""
-# Echo the contents of a file
-f = open('foo.txt', 'rU')
-for line in f:   ## iterates over the lines of the file
-print line,    ## trailing , so print does not add an end-of-line char
-                ## since 'line' already includes the end-of-line.
-f.close()
-##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
-#Files Unicode
-"""
-The "codecs" module provides support for reading a unicode file.
-"""
-import codecs
-f = codecs.open('foo.txt', 'rU', 'utf-8')
-for line in f:
-# here line is a *unicode* string
+print (dict)      ## {'a':1, 'c':3}
 
 
 

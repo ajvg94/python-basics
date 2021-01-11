@@ -31,7 +31,7 @@ f.closed
 # Echo the contents of a file
 f = open('foo.txt', 'rU')
 for line in f:   ## iterates over the lines of the file
-print line,    ## trailing , so print does not add an end-of-line char
+    print (line)    ## trailing , so print does not add an end-of-line char
                 ## since 'line' already includes the end-of-line.
 f.close()
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
@@ -41,5 +41,4 @@ The "codecs" module provides support for reading a unicode file.
 """
 import codecs
 f = codecs.open('foo.txt', 'rU', 'utf-8')
-for line in f:
-# here line is a *unicode* string
+
