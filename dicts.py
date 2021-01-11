@@ -1,3 +1,5 @@
+
+##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
 #Dicts
 #They're like objects in python
 dict = {}
@@ -13,6 +15,20 @@ dict['a'] = 6       ## Put new key/value into dict
 ## print dict['z']                  ## Throws KeyError
 if 'z' in dict: print (dict['z'])     ## Avoid KeyError
 print (dict.get('z'))  ## None (instead of KeyError)
+##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
+# Dictionaries (like objects)
+
+tel = {'jack': 4098, 'sape': 4139}
+tel['guido'] = 4127
+print (tel)             # {'jack': 4098, 'sape': 4139, 'guido': 4127}
+print (tel['jack'])     # 4098
+del tel['sape']
+tel['irv'] = 4127
+print (tel)             # {'jack': 4098, 'guido': 4127, 'irv': 4127}
+list(tel)               # ['jack', 'guido', 'irv']
+sorted(tel)             # ['guido', 'irv', 'jack']
+print ('guido' in tel)  # True
+print ('jack' not in tel)# False
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
 ## By default, iterating over a dict iterates over its keys.
 ## Note that the keys are in a random order.

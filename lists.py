@@ -34,6 +34,9 @@ Here are some other common list methods.
     list.sort() -- sorts the list in place (does not return it). (The sorted() function shown later is preferred.)
     list.reverse() -- reverses the list in place (does not return it)
     list.pop(index) -- removes and returns the element at the given index. Returns the rightmost element if index is omitted (roughly the opposite of append()).
+    list.count(x) -- Return the number of times x appears in the list.
+    list.copy() -- Return a shallow copy of the list. Equivalent to a[:].
+
 """
 list = ['larry', 'curly', 'moe']
 list.append('shemp')         ## append elem at end
@@ -60,7 +63,7 @@ print (sorted(strs, reverse=True))   ## ['zz', 'aa', 'CC', 'BB']
 strs = ['ccc', 'aaaa', 'd', 'bb']
 print (sorted(strs, key=len))  ## ['d', 'bb', 'ccc', 'aaaa']
 ##--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--####--##
-# List Comprehensions (optional)
+# List Comprehensions
 """
 List comprehensions are a more advanced feature which is nice for some cases but is not needed 
 for the exercises and is not something you need to learn at first (i.e. you can skip this section). 
